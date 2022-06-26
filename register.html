@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Register</title>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div id="error"></div>
+    <form id="form" action="/" method="GET">
+      <h1 id="title">Register</h1>
+      <div>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="first name"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="last name"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="username"
+        />
+      </div>
+      <div>
+        <input type="email" id="email" name="email" placeholder="email" />
+      </div>
+      <div>
+        <input type="number" id="age" name="age" placeholder="Age" />
+      </div>
+      <div class="password">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="password"
+        />
+      </div>
+      <button type="submit" id="submit-btn">Submit</button>
+      <div id="register">
+        <p>Already registered?</p>
+        <a href="/index.html">Login</a>
+      </div>
+    </form>
+  </body>
+</html>

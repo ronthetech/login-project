@@ -1,0 +1,108 @@
+:root {
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --medium-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  --transition: all 0.3s linear;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+#error {
+  margin: 0 auto;
+  padding: 1em;
+  min-width: 20rem;
+  text-align: center;
+}
+#form {
+  box-shadow: var(--dark-shadow);
+  border-radius: 5px;
+  background-color: rgb(30, 40, 50);
+  color: ivory;
+  margin: 10rem auto;
+  max-width: 20rem;
+  padding: 2em 1em;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  justify-content: center;
+}
+#title {
+  text-align: center;
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+}
+#form input {
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 100%;
+}
+#form button {
+  min-width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: forestgreen;
+  color: #222;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.5em 0;
+  transition: var(--transition);
+  cursor: pointer;
+}
+#form button:hover,
+#form button:focus {
+  background-color: darkgreen;
+}
+.password {
+  position: relative;
+}
+#forgot-pass {
+  position: absolute;
+  right: 0.5em;
+  font-size: 0.9em;
+  color: darkgreen;
+  padding: 0.5em 0;
+}
+#register {
+  display: flex;
+  column-gap: 1em;
+  align-items: center;
+  color: ivory;
+  margin: 0 auto;
+}
+#register a {
+  color: yellowgreen;
+  transition: var(--transition);
+}
+#register a:hover,
+#register a:focus {
+  color: green;
+}
+
+#login {
+  display: flex;
+  column-gap: 1em;
+  align-items: center;
+  color: ivory;
+  margin: 0 auto;
+}
+#login a {
+  color: yellowgreen;
+  transition: var(--transition);
+}
+#login a:hover,
+#login a:focus {
+  color: green;
+}
